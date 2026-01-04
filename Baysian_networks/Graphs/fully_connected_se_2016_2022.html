@@ -302,8 +302,8 @@ function highlightFilter(filter) {
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"borderWidth": 5, "color": {"background": "#4a90e2d9", "border": "#FFFFFFD9"}, "font": {"color": "#FFFFFF8c", "face": "Helvetica", "size": 25}, "id": "EIS", "label": "EIS", "mass": 1, "shape": "dot", "size": 15}, {"borderWidth": 5, "color": {"background": "#4a90e2d9", "border": "#FFFFFFD9"}, "font": {"color": "#FFFFFF8c", "face": "Helvetica", "size": 25}, "id": "EUPC", "label": "EUPC", "mass": 1, "shape": "dot", "size": 15}]);
-                  edges = new vis.DataSet([{"arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "color": "#ffffffaa", "endPointOffset": {"from": 1, "to": -1}, "from": "EIS", "length": 15, "to": "EUPC", "width": 2}]);
+                  nodes = new vis.DataSet([{"borderWidth": 5, "color": {"background": "#4a90e2d9", "border": "#FFFFFFD9"}, "font": {"color": "#FFFFFF8c", "face": "Helvetica", "size": 25}, "id": "COC", "label": "COC", "mass": 1, "shape": "dot", "size": 15}, {"borderWidth": 5, "color": {"background": "#4a90e2d9", "border": "#FFFFFFD9"}, "font": {"color": "#FFFFFF8c", "face": "Helvetica", "size": 25}, "id": "EUPC", "label": "EUPC", "mass": 1, "shape": "dot", "size": 15}]);
+                  edges = new vis.DataSet([{"arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "color": "#ffffffaa", "endPointOffset": {"from": 1, "to": -1}, "from": "COC", "length": 15, "to": "EUPC", "width": 2}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
